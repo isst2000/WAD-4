@@ -1,0 +1,12 @@
+.commentRating {
+    color: #6c757d;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: .85rem;
+}
+.commentRating:hover {
+    color: #17a2b8;
+}
+.commentRating:last-child:hover {
+    color: #dc3545;
+}

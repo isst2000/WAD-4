@@ -1,0 +1,12 @@
+{%  load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<script src="{% static 'js/ajax.js' %}"></script>
+
+<li class="mb-3">
+    <div class="col-4 h-25 p-0 text-muted">
+        <span id="{{ comment.id }}">{{ comment.rating }}</span>
+        <span class="commentRating m-0 ml-1 ajax" onclick="loadRating({{ comment.id }})"><i class="fas fa-caret-up"></i></span>
+        <span class="commentRating m-0 ajax" onclick="loadRating({{ comment.id }})"><i class="fas fa-caret-down"></i></span>
+    </div>
+    {{ comment.answer_text }}
+</li>
